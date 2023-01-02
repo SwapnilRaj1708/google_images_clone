@@ -1,0 +1,24 @@
+.item-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 9px;
+    overflow: hidden;
+    gap: 2px;
+    margin-bottom: 14px;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: .2px;
+}
+
+.item {
+    border-radius: 12px;
+    height: 180px;
+}
+
+.desc {
+    font-size: .85rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

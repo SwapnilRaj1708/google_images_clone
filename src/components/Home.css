@@ -1,0 +1,88 @@
+.home {
+    height: 100%;
+    width: 100%;
+}
+
+.initial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 15%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#logo {
+    height: 2rem;
+    width: 6rem;
+}
+
+.navbar-custom {
+    background-color: white;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.input-field {
+    margin-top: 10rem;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    top: 75px;
+    z-index: 0;
+}
+
+.logo {
+    display: inline;
+    z-index: 2;
+}
+
+.google-images {
+    display: inline;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    bottom: 17px;
+    right: 6px;
+}
+
+.google-logo {
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    white-space: nowrap;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-auto-rows: 100px; */
+    }
+}
+
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
