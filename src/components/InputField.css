@@ -2,3 +2,17 @@
     width: 25rem;
 
 }
+
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+    .input-container {
+        width: 22rem;
+    
+    }
+}
+
+@media screen and (max-device-width: 375px) and (orientation: portrait) {
+    .input-container {
+        width: 19rem;
+    
+    }
+}
